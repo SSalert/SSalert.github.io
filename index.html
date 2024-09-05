@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -9,8 +8,16 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             color: #333;
@@ -32,60 +39,91 @@
             color: #007BFF;
             text-decoration: none;
         }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 12px;
+        }
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            footer {
+                font-size: 10px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>スマートショッピングアラート</h1>
-    </header>
-    
-    <section>
-        <h2>どんなシステムか</h2>
-        <p>「スマートショッピングアラート」は、特定のオンラインショッピングサイトでの新商品や価格変動をいち早く把握したい方のための、LINE通知システムです。専用のツールを用いて、最新情報を自動的に監視し、更新があればLINEを通じてリアルタイムでお知らせします。</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>スマートショッピングアラート</h1>
+        </header>
 
-    <section>
-        <h2>システム概要</h2>
-        <p>毎日24時間の監視を行い、タイムリーな情報提供を目指します。通知の頻度は、サイトの更新頻度に依存しますが、最新情報を即座にお届けすることをお約束します。</p>
-    </section>
+        <section>
+            <h2>どんなシステムか</h2>
+            <p>「スマートショッピングアラート」は、特定のオンラインショッピングサイトでの新商品や価格変動をいち早く把握したい方のための、LINE通知システムです。専用のツールを用いて、最新情報を自動的に監視し、更新があればLINEを通じてリアルタイムでお知らせします。</p>
+        </section>
 
-    <section>
-        <h2>こんな人にオススメ！</h2>
-        <ul>
-            <li>時間を有効活用し、効率的にショッピングを楽しみたい方</li>
-            <li>オンラインショッピングでのお得な情報を見逃したくない方</li>
-            <li>最新商品やセール情報に敏感な方</li>
-        </ul>
-    </section>
+        <section>
+            <h2>システム概要</h2>
+            <p>毎日24時間の監視を行い、タイムリーな情報提供を目指します。通知の頻度は、サイトの更新頻度に依存しますが、最新情報を即座にお届けすることをお約束します。</p>
+        </section>
 
-    <section class="plan-list">
-        <h2>ご利用可能 プラン一覧</h2>
-        <p>・ベーシックプラン/月額3,980円（税込） リアルタイム更新LINE通知<br>※セカストオンライン</p>
-        <p>現状、上記プランのみになります(順次拡大予定)</p>
-    </section>
+        <section>
+            <h2>こんな人にオススメ！</h2>
+            <ul>
+                <li>時間を有効活用し、効率的にショッピングを楽しみたい方</li>
+                <li>オンラインショッピングでのお得な情報を見逃したくない方</li>
+                <li>最新商品やセール情報に敏感な方</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>登録の手続きについて</h2>
-        <p>フォーム送信: <a href="https://docs.google.com/forms">こちらのグーグルフォーム</a>から必要事項を入力して契約手続きを行います。</p>
-        <p>LINE登録: 決済完了後、登録いただいたLINEアカウント友達申請を送るので、登録してください。</p>
-        <p>グループへの招待: 友達登録が完了次第、専用のLINEグループにご招待いたします。このグループで、監視対象サイトの更新情報をリアルタイムでお届けします。</p>
-    </section>
+        <section class="plan-list">
+            <h2>ご利用可能 プラン一覧</h2>
+            <p>・ベーシックプラン/月額3,980円（税込） リアルタイム更新LINE通知<br>※セカストオンライン</p>
+            <p>現状、上記プランのみになります(順次拡大予定)</p>
+        </section>
 
-    <section>
-        <h2>LINE通知運用方法と初期設定</h2>
-        <p>運営事務局では、LINE通知専用のLINEアカウントを準備しております。ご契約者様のLINE IDを、運営事務局のLINEアカウント「SSアラート運営」から友だち追加させていただきます。</p>
-        <p>※LINE IDが検索できない、またはグループ招待が行えない場合があります。その際は、以下の設定を確認してください。<br>
-        LINE設定 → プライバシー管理 → IDによる友だち追加を許可<br>
-        LINE設定 → 通知 → グループへの招待ON</p>
-    </section>
+        <section>
+            <h2>登録の手続きについて</h2>
+            <p>フォーム送信: <a href="https://docs.google.com/forms">こちらのグーグルフォーム</a>から必要事項を入力して契約手続きを行います。</p>
+            <p>LINE登録: 決済完了後、登録いただいたLINEアカウント友達申請を送るので、登録してください。</p>
+            <p>グループへの招待: 友達登録が完了次第、専用のLINEグループにご招待いたします。このグループで、監視対象サイトの更新情報をリアルタイムでお届けします。</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>お問い合わせ</h2>
+            <p>お問い合わせに関しては、こちらのメールアドレスへ <a href="mailto:smartsalert@gmail.com">smartsalert@gmail.com</a> お問合せください。</p>
+        </section>
+
+        <section>
+            <h2>LINE通知運用方法と初期設定</h2>
+            <p>運営事務局では、LINE通知専用のLINEアカウントを準備しております。ご契約者様のLINE IDを、運営事務局のLINEアカウント「SSアラート運営」から友だち追加させていただきます。</p>
+            <p>※LINE IDが検索できない、またはグループ招待が行えない場合があります。その際は、以下の設定を確認してください。<br>
+            LINE設定 → プライバシー管理 → IDによる友だち追加を許可<br>
+            LINE設定 → 通知 → グループへの招待ON</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            <a href="#">特定商取引法について</a> | 
+            <a href="#">利用規約</a> | 
+            <a href="#">プライバシーポリシー</a>
+        </p>
+    </footer>
 </body>
-
-
-
-    <section class="contact-info">
-        <h2>お問い合わせ</h2>
-        <p>お問い合わせに関しては、こちらのメールアドレスへ <a href="mailto:smartsalert@gmail.com">smartsalert@gmail.com</a> お問合せください。</p>
-    </section>
-
-    </html>
-
+</html>
