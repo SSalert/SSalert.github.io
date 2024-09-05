@@ -56,12 +56,26 @@
         footer a:hover {
             text-decoration: underline;
         }
+        /* ヘッダーのスタイル設定 */
+        header {
+            font-size: 18px; /* フォントサイズを少し小さく設定 */
+            text-align: center;
+            padding: 15px;
+            border-bottom: 2px solid #ccc; /* 横線を追加 */
+            background-color: #f8f9fa; /* 背景色を薄いグレーに */
+            color: #333; /* テキストの色 */
+        }
+
+        /* スマホ画面向けにさらに小さくするメディアクエリ */
         @media (max-width: 600px) {
             .container {
                 padding: 10px;
             }
             footer {
                 font-size: 10px;
+            }
+            header {
+                font-size: 16px; /* スマホでさらに小さく調整 */
             }
         }
     </style>
@@ -100,23 +114,21 @@
         <section>
             <h2>登録の手続きについて</h2>
             <p>フォーム送信: <a href="https://forms.gle/6E48biJr7osXe6vL7" target="_blank" rel="noopener noreferrer">こちらのグーグルフォーム</a>から必要事項を入力して契約手続きを行います。</p>
-            <p>LINE登録: 決済完了後、登録いただいたLINEアカウント友達申請を送るので、登録してください。</p>
+            <p>LINE登録: 決済完了後、登録いただいたLINEアカウントに友達申請を送るので、登録してください。</p>
             <p>グループへの招待: 友達登録が完了次第、専用のLINEグループにご招待いたします。このグループで、監視対象サイトの更新情報をリアルタイムでお届けします。</p>
         </section>
-
-       
 
         <section>
             <h2>LINE通知運用方法と初期設定</h2>
             <p>運営事務局では、LINE通知専用のLINEアカウントを準備しております。ご契約者様のLINE IDを、運営事務局のLINEアカウント「SSアラート運営」から友だち追加させていただきます。</p>
             <p>※LINE IDが検索できない、またはグループ招待が行えない場合があります。その際は、以下の設定を確認してください。<br>
             LINE設定 → プライバシー管理 → IDによる友だち追加を許可<br>
-            LINE設定 → 通知 → グループへの招待ON
-            LINEグループ作成後、グループ内の運営アカウントや通知botをグループから削除してしまうと、通知が止まってしまうのでご注意ください。
+            LINE設定 → 通知 → グループへの招待ON<br>
+            LINEグループ作成後、グループ内の運営アカウントや通知botをグループから削除してしまうと、通知が止まってしまうのでご注意ください。<br>
             誤って操作してまった場合は、メールにてお問合せください。</p>
         </section>
 
-<section class="contact-info">
+        <section class="contact-info">
             <h2>お問い合わせ</h2>
             <p>お問い合わせに関しては、こちらのメールアドレスへ <a href="mailto:smartsalert@gmail.com">smartsalert@gmail.com</a> お問合せください。</p>
         </section>
