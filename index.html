@@ -6,27 +6,39 @@
     <title>スマートショッピングアラート</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #ababab;
+            background-color: #f5f5f5;
+            color: #333;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
-            color: #333;
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin-bottom: 1em;
         }
         section {
             margin-bottom: 40px;
         }
         .contact-info {
-            background-color: #e0e0e0;
+            background-color: #ecf0f1;
             padding: 15px;
             border-radius: 5px;
         }
@@ -36,16 +48,21 @@
             border-radius: 5px;
         }
         a {
-            color: #007BFF;
+            color: #2980b9;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.2em;
+        }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #2c3e50;
             color: #fff;
             font-size: 12px;
         }
@@ -61,11 +78,8 @@
             font-size: 18px;
             text-align: center;
             padding: 50px 15px;
-            background-image: url('images/header-background.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: #3498db;
             color: white;
-            border-bottom: 2px solid #ccc;
         }
 
         /* スマホ画面向けにさらに小さくするメディアクエリ */
@@ -99,19 +113,13 @@
             <p>毎日24時間の監視を行い、タイムリーな情報提供を目指します。通知の頻度は、サイトの更新頻度に依存しますが、最新情報を即座にお届けすることをお約束します。</p>
         </section>
 
-        <section>
-            <h2>こんな人にオススメ！</h2>
-            <ul>
-                <li>時間を有効活用し、効率的にショッピングを楽しみたい方</li>
-                <li>オンラインショッピングでのお得な情報を見逃したくない方</li>
-                <li>最新商品やセール情報に敏感な方</li>
-            </ul>
-        </section>
+        <!-- 'こんな人にオススメ！' セクションを削除しました -->
 
         <section class="plan-list">
             <h2>ご利用可能 プラン一覧</h2>
             <p>・ベーシックプラン/月額3,980円（税込） リアルタイム更新LINE通知<br>※セカストオンライン</p>
             <p>ベーシックプランには、ハイブランド中心のセカオン売り切れ商品通知スプレッドシートの閲覧権も無料でついてきます。シートは1週間ごとにリセットされます。</p>
+            <p>※ご注意：課金周期は月ごとではなく、お支払い日から1か月ごとになります。たとえば、10月5日にお支払いされた場合、次回の請求日は11月5日となります。</p>
         </section>
 
         <section>
@@ -124,7 +132,7 @@
             <p>フォーム送信: <a href="https://forms.gle/6E48biJr7osXe6vL7" target="_blank" rel="noopener noreferrer">こちらのグーグルフォーム</a>から必要事項を入力して契約手続きを行います。</p>
             <p>LINE登録: 決済完了後、登録いただいたLINEアカウントに友達申請を送るので、登録してください。</p>
             <p>グループへの招待: 友達登録が完了次第、専用のLINEグループにご招待いたします。このグループで、監視対象サイトの更新情報をリアルタイムでお届けします。</p>
-            <p>現在3日間無料キャンペーン実施中です！</p>
+            <p class="highlight">現在3日間無料キャンペーン実施中です！</p>
         </section>
 
         <section>
